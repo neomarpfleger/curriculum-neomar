@@ -1,0 +1,186 @@
+
+:root{
+    --fundo-lateral: #A9907E;
+    --fundo-texto:#F3DEBA;
+    --font-family-text: 'Patua One', cursive;
+    --font-family-nome: 'Audiowide', cursive;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 24% auto auto auto;
+    border-radius: 20px;
+    font-family: var(--font-family-text);
+}
+
+.containerLigth{
+    background-color: var(--fundo-texto);
+}
+
+.containerLigth.dark{
+    background-color: rgb(29, 25, 29);
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin: 2.5rem auto 1rem;
+}
+
+#lista{
+    margin: 1rem 0.5rem;
+}
+
+i{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+#cabecalho{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    height: 10rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.ligth{
+    background: var(--fundo-lateral);
+}
+
+.ligth.dark{
+    background-color: black;
+    color: white;
+}
+
+#tema{
+    position: absolute;
+    margin: 1.5% 70%;
+}
+
+#tema:hover{
+    cursor: pointer;
+}
+
+.icone{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.nome{
+    font-size: 3.5rem;
+    font-family: var(--font-family-nome);
+}
+
+#lateral{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 90rem;
+    width: 20.3rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.boxFoto{
+    display: flex;
+    width: 100%;
+}
+
+.foto{
+    width: 75%;
+    margin: 0.5rem auto;
+    border-radius: 45%;
+}
+
+#texto{
+    grid-template-rows: auto auto auto auto;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-top: 0rem;
+}
+
+.subtitulo{
+    display:grid;
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+
+.textoData{
+    display: grid;
+    grid-template-columns: 34% 66%;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.atividadesDesempenhadas{
+    width: 30rem;
+    height: auto;
+    text-indent: 1.5rem;
+    word-wrap: break-word;
+}
+
+#footer{
+    display: flex;
+    height: 12rem;
+    contain: content;
+    align-items: end;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    
+    #container{
+        display: block;
+    }
+
+    #cabecalho{
+        width: auto;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #tema{
+        position: absolute;
+        margin: 4% 80%;
+    }
+
+    #tema:hover{
+        cursor: pointer;
+    }
+
+    .icone{
+        font-size: 1rem;
+    }
+
+    #lateral{
+        width: auto;
+        contain: content;
+        background: var(--fundo-lateral);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .atividadesDesempenhadas{
+        width: 15rem;
+        height: auto;
+        text-indent: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .textoData{
+        display: block;
+        margin:3rem 0 0 1rem;
+    }
+
+    .classe{
+        margin-top: 1.5rem;
+    }
+
+    .atividadesDesempenhadas{
+        width: 90%;
+        height: auto;
+    }
+}
