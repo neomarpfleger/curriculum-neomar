@@ -8,7 +8,7 @@
 
 #container{
     display: grid;
-    grid-template-columns: 24% auto auto auto;
+    grid-template-columns: 24% auto auto;
     border-radius: 20px;
     font-family: var(--font-family-text);
 }
@@ -39,7 +39,7 @@ i{
 #cabecalho{
     text-align: center;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 4;
     height: 10rem;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -74,10 +74,12 @@ i{
 }
 
 #lateral{
+    width: auto;
+    min-width: 250px;
+
     grid-row-start: 1;
     grid-row-end: 3;
     height: 90rem;
-    width: 20.3rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -97,7 +99,7 @@ i{
 #texto{
     grid-template-rows: auto auto auto auto;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 4;
     margin-top: 0rem;
 }
 
@@ -112,6 +114,7 @@ i{
     grid-template-columns: 34% 66%;
     margin-left: 2rem;
     margin-bottom: 1.5rem;
+    contain:content ;
 }
 
 .atividadesDesempenhadas{
@@ -183,4 +186,11 @@ i{
         width: 90%;
         height: auto;
     }
+}
+
+@media screen and (max-width: 720px) {
+    #cabecalho{
+        width: auto;
+    }
+
 }
