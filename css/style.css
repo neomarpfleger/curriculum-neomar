@@ -115,6 +115,7 @@ i{
     margin-left: 2rem;
     margin-bottom: 1.5rem;
     contain:content ;
+    word-wrap: break-word;
 }
 
 .atividadesDesempenhadas{
